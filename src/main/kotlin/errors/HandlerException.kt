@@ -1,4 +1,5 @@
-package Errors
+package errors
 
-class UserAlreadyExistsException(message: String) : RuntimeException(message)
-class UserNotFoundException(message: String) : RuntimeException(message)
+class UserAlreadyExistsException: RuntimeException("User already exist.")
+class UserNotFoundException: RuntimeException("User not found")
+class AppErrorException: RuntimeException("Error starting the application.")
