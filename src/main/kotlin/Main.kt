@@ -1,3 +1,5 @@
+import console.console
+
 fun main() {
-    println("Hello World!")
+    console()
 }
