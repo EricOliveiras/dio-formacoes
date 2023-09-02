@@ -9,11 +9,11 @@ fun console() {
         val userRepository = UserRepository()
         val userService = UserService(userRepository)
 
-        println("Escolha uma opção:")
         println("1 - Adicione um usuário.")
         println("2 - Buscar um usuário.")
         println("3 - Buscar todos os usuários.")
         println("4 - Fechar o programa.")
+        print("Escolha uma opção: ")
 
         val choice = readln().toInt()
 
