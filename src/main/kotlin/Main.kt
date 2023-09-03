@@ -1,5 +1,5 @@
-import console.console
+import terminal.app 
 
 fun main() {
-    console()
+   app()
 }
