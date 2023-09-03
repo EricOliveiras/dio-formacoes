@@ -1,0 +1,7 @@
+package terminal.educationalContent
+
+import repositories.EducationalContentRepository
+import services.EducationalContentService
+
+val educationalContentRepository = EducationalContentRepository()
+val educationalContentService = EducationalContentService(educationalContentRepository)
