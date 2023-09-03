@@ -1,3 +1,5 @@
 package models
 
-data class Formation(val name: String, val educationalContent: List<EducationalContent>)
+import interfaces.Level
+
+data class Formation(val name: String, val level: Level, val educationalContent: List<EducationalContent>)

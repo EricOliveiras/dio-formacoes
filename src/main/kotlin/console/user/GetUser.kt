@@ -1,4 +1,4 @@
-package console
+package console.user
 
 import services.UserService
 

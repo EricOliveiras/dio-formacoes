@@ -1,4 +1,4 @@
-package console
+package console.user
 
 import models.User
 import services.UserService
