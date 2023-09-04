@@ -1,7 +1,6 @@
 package terminal.educationalContent
 
 import terminal.app
-import terminal.educationalContent.educationalContentService
 
 fun educationalContentConsole() {
     println("|======== Conteúdos Educacionais ========|")
