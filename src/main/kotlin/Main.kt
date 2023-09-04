@@ -1,4 +1,4 @@
-import terminal.app 
+import terminal.app
 
 fun main() {
    app()
