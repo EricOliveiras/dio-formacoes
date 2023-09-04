@@ -1,6 +1,8 @@
 package database
 
+import interfaces.Level
 import models.EducationalContent
+import models.Formation
 import models.User
 
 val dataUser: MutableList<User> = mutableListOf()
@@ -55,4 +57,26 @@ val educationalContentIntro: MutableList<EducationalContent> = mutableListOf(
     EducationalContent(5, "Null Safety"),
     EducationalContent(6, "Classes"),
     EducationalContent(7, "Generics"),
+)
+
+val dataFormation: MutableList<Formation> = mutableListOf()
+
+fun addFormation(formation: Formation) {
+    dataFormation.add(formation)
+}
+
+fun enrollUserInFormation(formation: Formation, user: User) {
+    dataFormation.find { it.id == formation.id }?.enroll(user)
+}
+
+fun getAllFormations(): List<Formation> {
+    return dataFormation.toList()
+}
+
+fun countFormations(): Int {
+    return dataFormation.count()
+}
+
+val kotlinFormation: Formation = Formation(
+    1, "Formação Kotlin", Level.BASICO, educationalContentIntro, mutableListOf()
 )
