@@ -1,9 +1,12 @@
 package terminal
 
-import terminal.educationalContent.educationalContentConsole
-import terminal.user.*
+import database.addFormation
 import database.addManyEducationalContent
 import database.educationalContentIntro
+import database.kotlinFormation
+import terminal.educationalContent.educationalContentConsole
+import terminal.formation.formationConsole
+import terminal.user.userConsole
 
 fun app() {
     println("Bem vindo ao Dio Formações")
@@ -14,6 +17,7 @@ fun app() {
     print("Selecione uma opção: ")
 
     addManyEducationalContent(educationalContentIntro)
+    addFormation(kotlinFormation)
 
     val choice = readln().toInt()
 
@@ -22,8 +26,7 @@ fun app() {
             userConsole()
         }
         2 -> {
-            println("Not implemented")
-            app()
+            formationConsole()
         }
         3 -> {
             educationalContentConsole()
